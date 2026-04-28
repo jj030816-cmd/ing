@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54854dad90a1b8fbe18b821309fb5f67 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54854dad90a1b8fbe18b821309fb5f67" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54854dad90a1b8fbe18b821309fb5f67 = L.map(
+                "map_54854dad90a1b8fbe18b821309fb5f67",
+                {
+                    center: [37.4979, 127.0276],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_150e66f62914b0041f07380138482356 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_150e66f62914b0041f07380138482356.addTo(map_54854dad90a1b8fbe18b821309fb5f67);
+        
+    
+            var marker_cluster_c9587e1e1adbf9b90288a89a656416fd = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_2fff8d4171b7aea69596d6d5d5f5c282 = L.circleMarker(
+                [37.49941995686717, 127.03409245169311],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_9f15fae3924b2ad43f4dd1755c6d9501 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57ff7ea5b9824cdc499abc2b16399882 = $(`<div id="html_57ff7ea5b9824cdc499abc2b16399882" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,400.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 9분                 </div>                 </div>`)[0];
+                popup_9f15fae3924b2ad43f4dd1755c6d9501.setContent(html_57ff7ea5b9824cdc499abc2b16399882);
+            
+        
+
+        circle_marker_2fff8d4171b7aea69596d6d5d5f5c282.bindPopup(popup_9f15fae3924b2ad43f4dd1755c6d9501)
+        ;
+
+        
+    
+    
+            var circle_marker_1156a55f98557d7057565cb7efd83ef3 = L.circleMarker(
+                [37.50187978060918, 127.0348976117976],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_8f44d7802d0d0a0f54682adf8384f98d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d482de266040c4597cf000837200851 = $(`<div id="html_5d482de266040c4597cf000837200851" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🌴 무권리 🌴 평수대비금액 좋고 층고 높고 위치대비금액 좋아요.</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 60,000.0만 원<br>                     <b>월세:</b> 5,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 5분                 </div>                 </div>`)[0];
+                popup_8f44d7802d0d0a0f54682adf8384f98d.setContent(html_5d482de266040c4597cf000837200851);
+            
+        
+
+        circle_marker_1156a55f98557d7057565cb7efd83ef3.bindPopup(popup_8f44d7802d0d0a0f54682adf8384f98d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b053f081b5345201fbdc6902a25c2d7 = L.circleMarker(
+                [37.49805294607551, 127.02486683905994],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_ee7532c119491b513537aaba0d4c4d2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2925e25d73b76c5b52d18f315138373 = $(`<div id="html_b2925e25d73b76c5b52d18f315138373" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">잔자담배매장하실분</b><br>                     <hr>                     <b>업종:</b> 판매업<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 1,660.0만 원<br>                     <b>인근역:</b> 강남역, 도보 11분                 </div>                 </div>`)[0];
+                popup_ee7532c119491b513537aaba0d4c4d2a.setContent(html_b2925e25d73b76c5b52d18f315138373);
+            
+        
+
+        circle_marker_4b053f081b5345201fbdc6902a25c2d7.bindPopup(popup_ee7532c119491b513537aaba0d4c4d2a)
+        ;
+
+        
+    
+    
+            var circle_marker_4e91440dabbd8201757e7d8e7a0e2d13 = L.circleMarker(
+                [37.502659790983905, 127.03619026967291],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_f656f72ff4858050e137e532947ad1d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11426b9a3d3f161afed65478891080ff = $(`<div id="html_11426b9a3d3f161afed65478891080ff" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 31,000.0만 원<br>                     <b>월세:</b> 3,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 12분                 </div>                 </div>`)[0];
+                popup_f656f72ff4858050e137e532947ad1d0.setContent(html_11426b9a3d3f161afed65478891080ff);
+            
+        
+
+        circle_marker_4e91440dabbd8201757e7d8e7a0e2d13.bindPopup(popup_f656f72ff4858050e137e532947ad1d0)
+        ;
+
+        
+    
+    
+            var circle_marker_14c5f2d7aa8c252d6d388967decd8a65 = L.circleMarker(
+                [37.49851253016497, 127.0297594204413],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_03f50d24bbe486a22c6bb824326faaab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6aa08ddd7ffab190b2ec1bcd8f34c2a6 = $(`<div id="html_6aa08ddd7ffab190b2ec1bcd8f34c2a6" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 강남역, 도보 9분                 </div>                 </div>`)[0];
+                popup_03f50d24bbe486a22c6bb824326faaab.setContent(html_6aa08ddd7ffab190b2ec1bcd8f34c2a6);
+            
+        
+
+        circle_marker_14c5f2d7aa8c252d6d388967decd8a65.bindPopup(popup_03f50d24bbe486a22c6bb824326faaab)
+        ;
+
+        
+    
+    
+            var circle_marker_aaa5c750353ca1e6ea0459cb7d68296f = L.circleMarker(
+                [37.4983624398157, 127.03803757121253],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_5b5218d666e08fded36cfa610259cd96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b136c163554c6bbdce265de13536acfa = $(`<div id="html_b136c163554c6bbdce265de13536acfa" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 다용도 점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 25,000.0만 원<br>                     <b>월세:</b> 1,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 13분                 </div>                 </div>`)[0];
+                popup_5b5218d666e08fded36cfa610259cd96.setContent(html_b136c163554c6bbdce265de13536acfa);
+            
+        
+
+        circle_marker_aaa5c750353ca1e6ea0459cb7d68296f.bindPopup(popup_5b5218d666e08fded36cfa610259cd96)
+        ;
+
+        
+    
+    
+            var circle_marker_60f299fd66f4715480879ef0793db348 = L.circleMarker(
+                [37.4990298027126, 127.0361288701566],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_478dad80f3c27c0a6045c0ff836c39eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92e7879969ad0e462f70aa4ea85e18fb = $(`<div id="html_92e7879969ad0e462f70aa4ea85e18fb" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 3,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_478dad80f3c27c0a6045c0ff836c39eb.setContent(html_92e7879969ad0e462f70aa4ea85e18fb);
+            
+        
+
+        circle_marker_60f299fd66f4715480879ef0793db348.bindPopup(popup_478dad80f3c27c0a6045c0ff836c39eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d6c6fe0962fd9f790cde3b206826a0bc = L.circleMarker(
+                [37.49913468462223, 127.03368549192784],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_504f45020e458221f425a5821c9fcb78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c772f4218f33b4db8ca5caf49a587d85 = $(`<div id="html_c772f4218f33b4db8ca5caf49a587d85" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 2,900.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_504f45020e458221f425a5821c9fcb78.setContent(html_c772f4218f33b4db8ca5caf49a587d85);
+            
+        
+
+        circle_marker_d6c6fe0962fd9f790cde3b206826a0bc.bindPopup(popup_504f45020e458221f425a5821c9fcb78)
+        ;
+
+        
+    
+    
+            var circle_marker_1b6b8e057bc1d9f2612dcbf9e5b3bccc = L.circleMarker(
+                [37.49945468182347, 127.03843049920293],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_d175b06bc216c90717c8a41ae9fd6d33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a8e82b5af91b346337551065c89ded9 = $(`<div id="html_7a8e82b5af91b346337551065c89ded9" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 1,800.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_d175b06bc216c90717c8a41ae9fd6d33.setContent(html_7a8e82b5af91b346337551065c89ded9);
+            
+        
+
+        circle_marker_1b6b8e057bc1d9f2612dcbf9e5b3bccc.bindPopup(popup_d175b06bc216c90717c8a41ae9fd6d33)
+        ;
+
+        
+    
+    
+            var circle_marker_c95a7c2629e81962bdacc7dd3bf897ac = L.circleMarker(
+                [37.507773713072716, 127.03636506844798],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_660bb5636d1a4a444fcf518a4fe3f20d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63b4427b2758f13cf32fde434c6099ed = $(`<div id="html_63b4427b2758f13cf32fde434c6099ed" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 3,600.0만 원<br>                     <b>인근역:</b> 언주역, 도보 3분                 </div>                 </div>`)[0];
+                popup_660bb5636d1a4a444fcf518a4fe3f20d.setContent(html_63b4427b2758f13cf32fde434c6099ed);
+            
+        
+
+        circle_marker_c95a7c2629e81962bdacc7dd3bf897ac.bindPopup(popup_660bb5636d1a4a444fcf518a4fe3f20d)
+        ;
+
+        
+    
+    
+            var circle_marker_ff546b56631cb6f2a3bcd8c49842a4a2 = L.circleMarker(
+                [37.50355979738179, 127.03911875009871],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_30d1fb9655f64d8889aa2dde15ac47bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e2a2029d5b6b151cd4ae775aa020bd4 = $(`<div id="html_3e2a2029d5b6b151cd4ae775aa020bd4" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼역삼역 역세권. 오피스 상권. 소형사무실🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 12,600.0만 원<br>                     <b>월세:</b> 890.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 5분                 </div>                 </div>`)[0];
+                popup_30d1fb9655f64d8889aa2dde15ac47bd.setContent(html_3e2a2029d5b6b151cd4ae775aa020bd4);
+            
+        
+
+        circle_marker_ff546b56631cb6f2a3bcd8c49842a4a2.bindPopup(popup_30d1fb9655f64d8889aa2dde15ac47bd)
+        ;
+
+        
+    
+    
+            var circle_marker_bec8a11c98e692ce4f03fe649227b823 = L.circleMarker(
+                [37.495351701339885, 127.02998744218378],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_8ffc128c067d13de988650baf1d5e293 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b838455aab97d75928bdc859a0a20003 = $(`<div id="html_b838455aab97d75928bdc859a0a20003" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼신분당선 강남역 초역세권 깔끔한 지하 사무실. 즉시입주 가능🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,300.0만 원<br>                     <b>인근역:</b> 강남역, 도보 8분                 </div>                 </div>`)[0];
+                popup_8ffc128c067d13de988650baf1d5e293.setContent(html_b838455aab97d75928bdc859a0a20003);
+            
+        
+
+        circle_marker_bec8a11c98e692ce4f03fe649227b823.bindPopup(popup_8ffc128c067d13de988650baf1d5e293)
+        ;
+
+        
+    
+    
+            var circle_marker_24b4fca2b748442478de861e3c425e51 = L.circleMarker(
+                [37.50333105351083, 127.03478931078581],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_82347f3ae8e706fe132afec6da87ef11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98e4cae170617c7857f9a7f0831bf649 = $(`<div id="html_98e4cae170617c7857f9a7f0831bf649" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">💙ACE.무권리 스튜디오 NO.1💙</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 1,700.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_82347f3ae8e706fe132afec6da87ef11.setContent(html_98e4cae170617c7857f9a7f0831bf649);
+            
+        
+
+        circle_marker_24b4fca2b748442478de861e3c425e51.bindPopup(popup_82347f3ae8e706fe132afec6da87ef11)
+        ;
+
+        
+    
+    
+            var circle_marker_16df1d589e7bd70bead85527ec9294b1 = L.circleMarker(
+                [37.48398268580623, 127.01376419135993],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_17e8cb00646d3203b6e8ea99b335f8a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8e54eb661ddb70eeaaf24a2efb7ba73 = $(`<div id="html_c8e54eb661ddb70eeaaf24a2efb7ba73" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">✅무권리 가성비최고</b><br>                     <hr>                     <b>업종:</b> 휴게음식점<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 1,800.0만 원<br>                     <b>인근역:</b> 남부터미널(예술의전당)역, 도보 8분                 </div>                 </div>`)[0];
+                popup_17e8cb00646d3203b6e8ea99b335f8a8.setContent(html_c8e54eb661ddb70eeaaf24a2efb7ba73);
+            
+        
+
+        circle_marker_16df1d589e7bd70bead85527ec9294b1.bindPopup(popup_17e8cb00646d3203b6e8ea99b335f8a8)
+        ;
+
+        
+    
+    
+            var circle_marker_f7ee480c7ac59c30e2551ba9466cc24d = L.circleMarker(
+                [37.482252943214775, 127.03742137773843],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_26e2fb8f13bafd4de2eaa7894432b93e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f160554c1bda3d432077cbd5f021df9 = $(`<div id="html_2f160554c1bda3d432077cbd5f021df9" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼강남역 역세권. 깔끔한 상가, 사무실. 즉시입주 가능🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 10,000.0만 원<br>                     <b>월세:</b> 1,350.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 11분                 </div>                 </div>`)[0];
+                popup_26e2fb8f13bafd4de2eaa7894432b93e.setContent(html_2f160554c1bda3d432077cbd5f021df9);
+            
+        
+
+        circle_marker_f7ee480c7ac59c30e2551ba9466cc24d.bindPopup(popup_26e2fb8f13bafd4de2eaa7894432b93e)
+        ;
+
+        
+    
+    
+            var circle_marker_b971ccb2851bac4f6eb9075a4f91b492 = L.circleMarker(
+                [37.495125757887244, 127.02869261787244],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_19e0fcc5d3e4b395cc958a90b30337db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bc8e70b90b056d111763267b4318c5d = $(`<div id="html_2bc8e70b90b056d111763267b4318c5d" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼강남역 초역세권. 중소형사무실. 즉시입주 가능🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 65,000.0만 원<br>                     <b>월세:</b> 4,400.0만 원<br>                     <b>인근역:</b> 강남역, 도보 10분                 </div>                 </div>`)[0];
+                popup_19e0fcc5d3e4b395cc958a90b30337db.setContent(html_2bc8e70b90b056d111763267b4318c5d);
+            
+        
+
+        circle_marker_b971ccb2851bac4f6eb9075a4f91b492.bindPopup(popup_19e0fcc5d3e4b395cc958a90b30337db)
+        ;
+
+        
+    
+    
+            var circle_marker_6cae66668a42a575533ddbb3adbeed16 = L.circleMarker(
+                [37.498157527295746, 127.03390866309674],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_68a22697f22b297f9a8bf9bfd6656112 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4916b45f8c513a1d5841d85eedb5d0e = $(`<div id="html_c4916b45f8c513a1d5841d85eedb5d0e" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼역삼역 초역세권. 오피스 상권. 깔끔한 사무실. 즉시입주 가능🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 4,600.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 4분                 </div>                 </div>`)[0];
+                popup_68a22697f22b297f9a8bf9bfd6656112.setContent(html_c4916b45f8c513a1d5841d85eedb5d0e);
+            
+        
+
+        circle_marker_6cae66668a42a575533ddbb3adbeed16.bindPopup(popup_68a22697f22b297f9a8bf9bfd6656112)
+        ;
+
+        
+    
+    
+            var circle_marker_7195d614abc078597935875c284a4909 = L.circleMarker(
+                [37.49794270943222, 127.03542036870392],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_763c43a122cfb805fe88901b1f82d1c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddafd6a996f31189b34a2c1f1755cd50 = $(`<div id="html_ddafd6a996f31189b34a2c1f1755cd50" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">❤️ 아정당부동산중개법인</b><br>                     <hr>                     <b>업종:</b> 일반음식점<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 4,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 7분                 </div>                 </div>`)[0];
+                popup_763c43a122cfb805fe88901b1f82d1c6.setContent(html_ddafd6a996f31189b34a2c1f1755cd50);
+            
+        
+
+        circle_marker_7195d614abc078597935875c284a4909.bindPopup(popup_763c43a122cfb805fe88901b1f82d1c6)
+        ;
+
+        
+    
+    
+            var circle_marker_f87fd23b641b64a6f8cf4adc5738a997 = L.circleMarker(
+                [37.50047796049964, 127.03509113705154],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_1682dc3274c360aa369f742ed9336b31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cfb7be647f42cf1cadd992064c234d4 = $(`<div id="html_0cfb7be647f42cf1cadd992064c234d4" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">채광 활용법, 근데 이제 가성비까지 갖춘</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 1,450.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 6분                 </div>                 </div>`)[0];
+                popup_1682dc3274c360aa369f742ed9336b31.setContent(html_0cfb7be647f42cf1cadd992064c234d4);
+            
+        
+
+        circle_marker_f87fd23b641b64a6f8cf4adc5738a997.bindPopup(popup_1682dc3274c360aa369f742ed9336b31)
+        ;
+
+        
+    
+    
+            var circle_marker_873e80c2c3e8da1feb1e501acf4f4a60 = L.circleMarker(
+                [37.49943201886235, 127.02810012584357],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_e630c724c4436a255424f1878ecdc207 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1314f36d020b03d5bd7753c1ae7689ff = $(`<div id="html_1314f36d020b03d5bd7753c1ae7689ff" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">■ 강남역 3분 탑층 아릿다운 사무실 ■</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 25,000.0만 원<br>                     <b>월세:</b> 2,300.0만 원<br>                     <b>인근역:</b> 강남역, 도보 5분                 </div>                 </div>`)[0];
+                popup_e630c724c4436a255424f1878ecdc207.setContent(html_1314f36d020b03d5bd7753c1ae7689ff);
+            
+        
+
+        circle_marker_873e80c2c3e8da1feb1e501acf4f4a60.bindPopup(popup_e630c724c4436a255424f1878ecdc207)
+        ;
+
+        
+    
+    
+            var circle_marker_8b941d7b065eb0c5de6043de49864d86 = L.circleMarker(
+                [37.48649964037838, 127.03487314145733],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_76419ab7a469606dc75e3914e56a5b2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2dbc14679d2ddcfd48f7b82f9bea1caf = $(`<div id="html_2dbc14679d2ddcfd48f7b82f9bea1caf" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">눈부신 스튜디오 의류사무실</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 11분                 </div>                 </div>`)[0];
+                popup_76419ab7a469606dc75e3914e56a5b2b.setContent(html_2dbc14679d2ddcfd48f7b82f9bea1caf);
+            
+        
+
+        circle_marker_8b941d7b065eb0c5de6043de49864d86.bindPopup(popup_76419ab7a469606dc75e3914e56a5b2b)
+        ;
+
+        
+    
+    
+            var circle_marker_2718e8a86b2711b7d87fd587944a04c5 = L.circleMarker(
+                [37.498558297675046, 127.03816343865485],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_29d1ac923323c423a891e7ceca6bd869 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5a045be492fe4e23d67f8abee3724d9 = $(`<div id="html_a5a045be492fe4e23d67f8abee3724d9" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">신축 단독루프탑 럭셔리의 끝</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 13분                 </div>                 </div>`)[0];
+                popup_29d1ac923323c423a891e7ceca6bd869.setContent(html_a5a045be492fe4e23d67f8abee3724d9);
+            
+        
+
+        circle_marker_2718e8a86b2711b7d87fd587944a04c5.bindPopup(popup_29d1ac923323c423a891e7ceca6bd869)
+        ;
+
+        
+    
+    
+            var circle_marker_11c05ed33f5db8bcc541a36a6ae2fccc = L.circleMarker(
+                [37.48573305282045, 127.03424836315357],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_58206215ac55afe507458ea6d2ff085c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8739224466ffa8f082389b61f513c472 = $(`<div id="html_8739224466ffa8f082389b61f513c472" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔴🔴 스튜디오 작업실 소형사무실 🔴🔴</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 1,600.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 12분                 </div>                 </div>`)[0];
+                popup_58206215ac55afe507458ea6d2ff085c.setContent(html_8739224466ffa8f082389b61f513c472);
+            
+        
+
+        circle_marker_11c05ed33f5db8bcc541a36a6ae2fccc.bindPopup(popup_58206215ac55afe507458ea6d2ff085c)
+        ;
+
+        
+    
+    
+            var circle_marker_84fc8f9fc3b65e501d028a81ddaff909 = L.circleMarker(
+                [37.4949902073403, 127.0274798343548],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_2383d98083752efd0f8b661c14756212 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c207fa71d26ebc1ab7dea08713f80909 = $(`<div id="html_c207fa71d26ebc1ab7dea08713f80909" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 10,000.0만 원<br>                     <b>월세:</b> 900.0만 원<br>                     <b>인근역:</b> 강남역, 도보 11분                 </div>                 </div>`)[0];
+                popup_2383d98083752efd0f8b661c14756212.setContent(html_c207fa71d26ebc1ab7dea08713f80909);
+            
+        
+
+        circle_marker_84fc8f9fc3b65e501d028a81ddaff909.bindPopup(popup_2383d98083752efd0f8b661c14756212)
+        ;
+
+        
+    
+    
+            var circle_marker_40182309df589c58fada43eec4939718 = L.circleMarker(
+                [37.48343072784415, 127.03615212499058],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_066c656f3bc6c973c3ff7ef4fdd4ff25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1baf372d61f1a59276972aa82d9eeb98 = $(`<div id="html_1baf372d61f1a59276972aa82d9eeb98" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,800.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 14분                 </div>                 </div>`)[0];
+                popup_066c656f3bc6c973c3ff7ef4fdd4ff25.setContent(html_1baf372d61f1a59276972aa82d9eeb98);
+            
+        
+
+        circle_marker_40182309df589c58fada43eec4939718.bindPopup(popup_066c656f3bc6c973c3ff7ef4fdd4ff25)
+        ;
+
+        
+    
+    
+            var circle_marker_884ffddf0806a447e00f8b2d4241911b = L.circleMarker(
+                [37.49847288760959, 127.03578872279388],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_1424a7c86b9e028dcb078b4db9a146ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cd2c180c22d08c313380a41a8a5f255 = $(`<div id="html_2cd2c180c22d08c313380a41a8a5f255" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 2,200.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 5분                 </div>                 </div>`)[0];
+                popup_1424a7c86b9e028dcb078b4db9a146ed.setContent(html_2cd2c180c22d08c313380a41a8a5f255);
+            
+        
+
+        circle_marker_884ffddf0806a447e00f8b2d4241911b.bindPopup(popup_1424a7c86b9e028dcb078b4db9a146ed)
+        ;
+
+        
+    
+    
+            var circle_marker_d58fe6f663a116698028490f0d4a189f = L.circleMarker(
+                [37.50605491278854, 127.02486928665121],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_d3c3eb62978a726fa8a35cdbfa55e304 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15805789ac699caf6146bdb990af522f = $(`<div id="html_15805789ac699caf6146bdb990af522f" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">금액대비 좋고 넓은 지하 공간</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 신논현역, 도보 8분                 </div>                 </div>`)[0];
+                popup_d3c3eb62978a726fa8a35cdbfa55e304.setContent(html_15805789ac699caf6146bdb990af522f);
+            
+        
+
+        circle_marker_d58fe6f663a116698028490f0d4a189f.bindPopup(popup_d3c3eb62978a726fa8a35cdbfa55e304)
+        ;
+
+        
+    
+    
+            var circle_marker_7f284d1f1e66112ebe60753694e96c1c = L.circleMarker(
+                [37.50749702558996, 127.03131816597514],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_2530440562f437ff6956d84653a522af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ce8af4be9ea5b79ab7f2811772a0768 = $(`<div id="html_2ce8af4be9ea5b79ab7f2811772a0768" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 2,000.0만 원<br>                     <b>인근역:</b> 언주역, 도보 3분                 </div>                 </div>`)[0];
+                popup_2530440562f437ff6956d84653a522af.setContent(html_2ce8af4be9ea5b79ab7f2811772a0768);
+            
+        
+
+        circle_marker_7f284d1f1e66112ebe60753694e96c1c.bindPopup(popup_2530440562f437ff6956d84653a522af)
+        ;
+
+        
+    
+    
+            var circle_marker_da7f44ea25ae834aee7e6f753bd3e1a7 = L.circleMarker(
+                [37.49512604310634, 127.02971012330742],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_6f3df83b7d131906ff9182b6311bc239 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c19ec6381ecc744e63da678daefd425c = $(`<div id="html_c19ec6381ecc744e63da678daefd425c" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 강남역, 도보 13분                 </div>                 </div>`)[0];
+                popup_6f3df83b7d131906ff9182b6311bc239.setContent(html_c19ec6381ecc744e63da678daefd425c);
+            
+        
+
+        circle_marker_da7f44ea25ae834aee7e6f753bd3e1a7.bindPopup(popup_6f3df83b7d131906ff9182b6311bc239)
+        ;
+
+        
+    
+    
+            var circle_marker_3e6cc12ffc1fb8c0703fe4e881c1c5bf = L.circleMarker(
+                [37.48522072755913, 127.03746280571012],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_3646478464bc5a1d8b7f18999fe37db7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e64156c6c360ae312b986befbdaaf83 = $(`<div id="html_1e64156c6c360ae312b986befbdaaf83" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 20,000.0만 원<br>                     <b>월세:</b> 1,700.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 11분                 </div>                 </div>`)[0];
+                popup_3646478464bc5a1d8b7f18999fe37db7.setContent(html_1e64156c6c360ae312b986befbdaaf83);
+            
+        
+
+        circle_marker_3e6cc12ffc1fb8c0703fe4e881c1c5bf.bindPopup(popup_3646478464bc5a1d8b7f18999fe37db7)
+        ;
+
+        
+    
+    
+            var circle_marker_383c65f59a0a382a89812575847cd0b2 = L.circleMarker(
+                [37.51001801229642, 127.03436022166508],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_52ee199d5bcbeb1c492336fc0fe3fae7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95b871605379871b043fb04608bbd55a = $(`<div id="html_95b871605379871b043fb04608bbd55a" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 4,500.0만 원<br>                     <b>인근역:</b> 언주역, 도보 3분                 </div>                 </div>`)[0];
+                popup_52ee199d5bcbeb1c492336fc0fe3fae7.setContent(html_95b871605379871b043fb04608bbd55a);
+            
+        
+
+        circle_marker_383c65f59a0a382a89812575847cd0b2.bindPopup(popup_52ee199d5bcbeb1c492336fc0fe3fae7)
+        ;
+
+        
+    
+    
+            var circle_marker_4acd5161309d64656305a64aa10f167b = L.circleMarker(
+                [37.501214853468376, 127.036899472158],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_f599189a1f7013c6d6a3f8fe555f5aa8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_261b51ef011b2711353d4ad3e6843c4d = $(`<div id="html_261b51ef011b2711353d4ad3e6843c4d" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 3,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 12분                 </div>                 </div>`)[0];
+                popup_f599189a1f7013c6d6a3f8fe555f5aa8.setContent(html_261b51ef011b2711353d4ad3e6843c4d);
+            
+        
+
+        circle_marker_4acd5161309d64656305a64aa10f167b.bindPopup(popup_f599189a1f7013c6d6a3f8fe555f5aa8)
+        ;
+
+        
+    
+    
+            var circle_marker_2e9e8a624b33642442df456832120e1b = L.circleMarker(
+                [37.50301868704948, 127.03494284450841],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_6b074ab1346c6c1269adb66eb332ebdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db6b4642ae7e288b2fb3c5b96b6f4234 = $(`<div id="html_db6b4642ae7e288b2fb3c5b96b6f4234" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​가시성🔷 금액대비 좋은 1층 상가점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 450,000.0만 원<br>                     <b>월세:</b> 4,700.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 12분                 </div>                 </div>`)[0];
+                popup_6b074ab1346c6c1269adb66eb332ebdd.setContent(html_db6b4642ae7e288b2fb3c5b96b6f4234);
+            
+        
+
+        circle_marker_2e9e8a624b33642442df456832120e1b.bindPopup(popup_6b074ab1346c6c1269adb66eb332ebdd)
+        ;
+
+        
+    
+    
+            var circle_marker_9505d93e31fc37b2d3dc4ddd7fdf384c = L.circleMarker(
+                [37.49812104128559, 127.03410429607644],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_6c3aee158995d1a18c25fb1834c6296f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17dcbe722103653d2bb6514ee12d8f06 = $(`<div id="html_17dcbe722103653d2bb6514ee12d8f06" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​가시성🔷 유동인구 많은 전면 넓은 1층 점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 2,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 5분                 </div>                 </div>`)[0];
+                popup_6c3aee158995d1a18c25fb1834c6296f.setContent(html_17dcbe722103653d2bb6514ee12d8f06);
+            
+        
+
+        circle_marker_9505d93e31fc37b2d3dc4ddd7fdf384c.bindPopup(popup_6c3aee158995d1a18c25fb1834c6296f)
+        ;
+
+        
+    
+    
+            var circle_marker_dadb93208e00fc208ce252d899354b00 = L.circleMarker(
+                [37.4827555626432, 127.03697821105052],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_6d7c147aee3570ea5230472da34721ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1deb986273134e9aec083307eeb137b9 = $(`<div id="html_1deb986273134e9aec083307eeb137b9" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 1,600.0만 원<br>                     <b>인근역:</b> 양재(서초구청)역, 도보 13분                 </div>                 </div>`)[0];
+                popup_6d7c147aee3570ea5230472da34721ca.setContent(html_1deb986273134e9aec083307eeb137b9);
+            
+        
+
+        circle_marker_dadb93208e00fc208ce252d899354b00.bindPopup(popup_6d7c147aee3570ea5230472da34721ca)
+        ;
+
+        
+    
+    
+            var circle_marker_2084eafe5aeb6d62d7c75e72220161a2 = L.circleMarker(
+                [37.50006194113412, 127.035306268842],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_78472d8019e4e780e3538aa08c7d5d49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7d5193bf24a2b48ba2b4e602c670d9e = $(`<div id="html_d7d5193bf24a2b48ba2b4e602c670d9e" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 4,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_78472d8019e4e780e3538aa08c7d5d49.setContent(html_d7d5193bf24a2b48ba2b4e602c670d9e);
+            
+        
+
+        circle_marker_2084eafe5aeb6d62d7c75e72220161a2.bindPopup(popup_78472d8019e4e780e3538aa08c7d5d49)
+        ;
+
+        
+    
+    
+            var circle_marker_8b5f81551036f93196fd0d3a8d08da56 = L.circleMarker(
+                [37.50210027110089, 127.0373099085427],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_ee3de5047868bb05cc60b9b735477238 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd9b6384dac5102c886583b585030aed = $(`<div id="html_dd9b6384dac5102c886583b585030aed" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷채광🔷위치대비금액 좋은 채광 좋은 지상점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 3,200.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 5분                 </div>                 </div>`)[0];
+                popup_ee3de5047868bb05cc60b9b735477238.setContent(html_dd9b6384dac5102c886583b585030aed);
+            
+        
+
+        circle_marker_8b5f81551036f93196fd0d3a8d08da56.bindPopup(popup_ee3de5047868bb05cc60b9b735477238)
+        ;
+
+        
+    
+    
+            var circle_marker_ebe5ffb8590c6093aa8f7790cd4f6ff6 = L.circleMarker(
+                [37.49759030439692, 127.02890316409507],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_7e397bc28bf5b4b88cddea8bad84a6a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b327236e019d2b0e4370a44352ed6a41 = $(`<div id="html_b327236e019d2b0e4370a44352ed6a41" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🔷​무권리🔷평수대비금액 좋은 층고높은 지하점포</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 3,400.0만 원<br>                     <b>인근역:</b> 강남역, 도보 13분                 </div>                 </div>`)[0];
+                popup_7e397bc28bf5b4b88cddea8bad84a6a8.setContent(html_b327236e019d2b0e4370a44352ed6a41);
+            
+        
+
+        circle_marker_ebe5ffb8590c6093aa8f7790cd4f6ff6.bindPopup(popup_7e397bc28bf5b4b88cddea8bad84a6a8)
+        ;
+
+        
+    
+    
+            var circle_marker_74cf26de9bd97b2a597f573d1e4dfa90 = L.circleMarker(
+                [37.503300156275934, 127.02641483206685],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_e7d289d761065ce9670d64a313181de4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c5997c7a1926c7ed44ab7687a2a73e5 = $(`<div id="html_7c5997c7a1926c7ed44ab7687a2a73e5" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">✅신논현역 5분, 컨디션 최상, 뷰티샵추천</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 10,000.0만 원<br>                     <b>월세:</b> 1,200.0만 원<br>                     <b>인근역:</b> 신논현역, 도보 5분                 </div>                 </div>`)[0];
+                popup_e7d289d761065ce9670d64a313181de4.setContent(html_7c5997c7a1926c7ed44ab7687a2a73e5);
+            
+        
+
+        circle_marker_74cf26de9bd97b2a597f573d1e4dfa90.bindPopup(popup_e7d289d761065ce9670d64a313181de4)
+        ;
+
+        
+    
+    
+            var circle_marker_c99f7f54686c9bf02dcb0612f4e93b16 = L.circleMarker(
+                [37.50266819976122, 127.03762916543667],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_11a1ed476bfded2a7de18120c1d5d3cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aef8c81e57ae9905b40e1b6928d39847 = $(`<div id="html_aef8c81e57ae9905b40e1b6928d39847" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">✅무권리 즉시입주 다용도상가</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 10,500.0만 원<br>                     <b>월세:</b> 1,050.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 14분                 </div>                 </div>`)[0];
+                popup_11a1ed476bfded2a7de18120c1d5d3cc.setContent(html_aef8c81e57ae9905b40e1b6928d39847);
+            
+        
+
+        circle_marker_c99f7f54686c9bf02dcb0612f4e93b16.bindPopup(popup_11a1ed476bfded2a7de18120c1d5d3cc)
+        ;
+
+        
+    
+    
+            var circle_marker_06ace3d7372be116691bf0425a67bcd4 = L.circleMarker(
+                [37.50071006883543, 127.03940898988024],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_87792a8494e5b8eb2dd04b4eb8890beb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21bc2475e4d9ddfe3045d55175fa79c4 = $(`<div id="html_21bc2475e4d9ddfe3045d55175fa79c4" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">🗼역삼역 초역세권. 오피스 상권. 깔끔한 사무실. 즉시입주 가능🗼</b><br>                     <hr>                     <b>업종:</b> 서비스업<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 2,700.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_87792a8494e5b8eb2dd04b4eb8890beb.setContent(html_21bc2475e4d9ddfe3045d55175fa79c4);
+            
+        
+
+        circle_marker_06ace3d7372be116691bf0425a67bcd4.bindPopup(popup_87792a8494e5b8eb2dd04b4eb8890beb)
+        ;
+
+        
+    
+    
+            var circle_marker_e6ffa59892717f785e507a7bf7ebab60 = L.circleMarker(
+                [37.50043498064212, 127.03571031282877],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_ad43aaea376c3ce02f347e90f6da248e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a81e7d3039a5906a8a3898d6f22aec0 = $(`<div id="html_6a81e7d3039a5906a8a3898d6f22aec0" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">♥역삼역 도보2분 자주식주차 층고높음 인테리어ACE♥</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 100,000.0만 원<br>                     <b>월세:</b> 6,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 3분                 </div>                 </div>`)[0];
+                popup_ad43aaea376c3ce02f347e90f6da248e.setContent(html_6a81e7d3039a5906a8a3898d6f22aec0);
+            
+        
+
+        circle_marker_e6ffa59892717f785e507a7bf7ebab60.bindPopup(popup_ad43aaea376c3ce02f347e90f6da248e)
+        ;
+
+        
+    
+    
+            var circle_marker_63a97e725457fd5f0bef3f2d2cb45766 = L.circleMarker(
+                [37.50289694821084, 127.03703091350259],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_92c2095cd92b4d2d0f43da5fa225fcc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60ed2f7a63c3600bd843569bacb909c0 = $(`<div id="html_60ed2f7a63c3600bd843569bacb909c0" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">◇복층사무실.층고4미터이상.아일랜드키친.인테리어S급◇</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 30,000.0만 원<br>                     <b>월세:</b> 3,000.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 8분                 </div>                 </div>`)[0];
+                popup_92c2095cd92b4d2d0f43da5fa225fcc1.setContent(html_60ed2f7a63c3600bd843569bacb909c0);
+            
+        
+
+        circle_marker_63a97e725457fd5f0bef3f2d2cb45766.bindPopup(popup_92c2095cd92b4d2d0f43da5fa225fcc1)
+        ;
+
+        
+    
+    
+            var circle_marker_88f6e62e13a47c1e40df447a4ce4c209 = L.circleMarker(
+                [37.499258358166095, 127.02894812478083],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_aab6ef08077cbab1f8d5e83f38cc111d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bdd07957cf7c3fa603bfadadc5b2a7a = $(`<div id="html_1bdd07957cf7c3fa603bfadadc5b2a7a" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">●강남역3분.인테리어S급.글라스타워.빠른입주가능●</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 50,000.0만 원<br>                     <b>월세:</b> 3,500.0만 원<br>                     <b>인근역:</b> 강남역, 도보 6분                 </div>                 </div>`)[0];
+                popup_aab6ef08077cbab1f8d5e83f38cc111d.setContent(html_1bdd07957cf7c3fa603bfadadc5b2a7a);
+            
+        
+
+        circle_marker_88f6e62e13a47c1e40df447a4ce4c209.bindPopup(popup_aab6ef08077cbab1f8d5e83f38cc111d)
+        ;
+
+        
+    
+    
+            var circle_marker_4d5f66e721688e8eb6311052e70e1c97 = L.circleMarker(
+                [37.49790408963362, 127.02901375055139],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_5cf7074b5cf3738e29bd79313de6759a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_204ee16162110375840d7aaf03f3b17b = $(`<div id="html_204ee16162110375840d7aaf03f3b17b" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">강남역인근 무료2대 룸多.세무.법무.아이티</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 150,000.0만 원<br>                     <b>월세:</b> 8,500.0만 원<br>                     <b>인근역:</b> 강남역, 도보 5분                 </div>                 </div>`)[0];
+                popup_5cf7074b5cf3738e29bd79313de6759a.setContent(html_204ee16162110375840d7aaf03f3b17b);
+            
+        
+
+        circle_marker_4d5f66e721688e8eb6311052e70e1c97.bindPopup(popup_5cf7074b5cf3738e29bd79313de6759a)
+        ;
+
+        
+    
+    
+            var circle_marker_4225c15e4c7f2afb142e0b4dbb19ed52 = L.circleMarker(
+                [37.497159306924246, 127.02598884406619],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_04377bcce275dcca90c34adbaaab10d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d441c9bdc4a992597262385abc4173b = $(`<div id="html_5d441c9bdc4a992597262385abc4173b" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">★강남역3분.세무.법무.공유오피스강추.룸9.인테리어최상★</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 60,000.0만 원<br>                     <b>월세:</b> 6,800.0만 원<br>                     <b>인근역:</b> 강남역, 도보 5분                 </div>                 </div>`)[0];
+                popup_04377bcce275dcca90c34adbaaab10d6.setContent(html_5d441c9bdc4a992597262385abc4173b);
+            
+        
+
+        circle_marker_4225c15e4c7f2afb142e0b4dbb19ed52.bindPopup(popup_04377bcce275dcca90c34adbaaab10d6)
+        ;
+
+        
+    
+    
+            var circle_marker_8fed6172972377af5ed8636249145c8e = L.circleMarker(
+                [37.50271388989405, 127.03866665421732],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_05c9e4a812a61a06bc2dc74811c3a72c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b568046c04085bd2e38715a75ed9477d = $(`<div id="html_b568046c04085bd2e38715a75ed9477d" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">역삼역3분 소형ACE사무실 엘베有</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 18,000.0만 원<br>                     <b>월세:</b> 1,500.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 4분                 </div>                 </div>`)[0];
+                popup_05c9e4a812a61a06bc2dc74811c3a72c.setContent(html_b568046c04085bd2e38715a75ed9477d);
+            
+        
+
+        circle_marker_8fed6172972377af5ed8636249145c8e.bindPopup(popup_05c9e4a812a61a06bc2dc74811c3a72c)
+        ;
+
+        
+    
+    
+            var circle_marker_431a97741a43f3b870dc5feadd65d437 = L.circleMarker(
+                [37.49869981846248, 127.03780190955423],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_9b574dceb6dae0b33cde0360680fa589 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c2c1a9ad20e1ea64d645b9eb6ba75c3 = $(`<div id="html_5c2c1a9ad20e1ea64d645b9eb6ba75c3" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">역삼역1분 무료3대 110P 가성비 ACE사무실</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 150,000.0만 원<br>                     <b>월세:</b> 12,870.0만 원<br>                     <b>인근역:</b> 역삼역, 도보 4분                 </div>                 </div>`)[0];
+                popup_9b574dceb6dae0b33cde0360680fa589.setContent(html_5c2c1a9ad20e1ea64d645b9eb6ba75c3);
+            
+        
+
+        circle_marker_431a97741a43f3b870dc5feadd65d437.bindPopup(popup_9b574dceb6dae0b33cde0360680fa589)
+        ;
+
+        
+    
+    
+            var circle_marker_a4b0a31f5c3f16e215b56f3684a28826 = L.circleMarker(
+                [37.48262842062747, 127.01337200868397],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_75be9492f801bc86834a6637bca3fa6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_101b97a4c9382479028226e39f26a063 = $(`<div id="html_101b97a4c9382479028226e39f26a063" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">실사진 서초역 교대역 더블역세권 A급 가성비 인테리어 테라스</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 40,000.0만 원<br>                     <b>월세:</b> 3,200.0만 원<br>                     <b>인근역:</b> 남부터미널(예술의전당)역, 도보 8분                 </div>                 </div>`)[0];
+                popup_75be9492f801bc86834a6637bca3fa6b.setContent(html_101b97a4c9382479028226e39f26a063);
+            
+        
+
+        circle_marker_a4b0a31f5c3f16e215b56f3684a28826.bindPopup(popup_75be9492f801bc86834a6637bca3fa6b)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4f45b6f09c2d046f4dc92e99bade7b = L.circleMarker(
+                [37.49955408318964, 127.02575488598981],
+                {"bubblingMouseEvents": true, "color": "#2dd4bf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9587e1e1adbf9b90288a89a656416fd);
+        
+    
+        var popup_3103c545caf5fc984d04b40e035f540d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60e3d4a842543d2651f9a6e0b67f22ce = $(`<div id="html_60e3d4a842543d2651f9a6e0b67f22ce" style="width: 100.0%; height: 100.0%;">                 <div style="width:200px; font-family: 'Inter', sans-serif;">                     <b style="color:#2dd4bf;">강남역5분. 대로변에서 바로접근용이.인테리어ACE</b><br>                     <hr>                     <b>업종:</b> 기타업종<br>                     <b>보증금:</b> 35,000.0만 원<br>                     <b>월세:</b> 2,800.0만 원<br>                     <b>인근역:</b> 강남역, 도보 6분                 </div>                 </div>`)[0];
+                popup_3103c545caf5fc984d04b40e035f540d.setContent(html_60e3d4a842543d2651f9a6e0b67f22ce);
+            
+        
+
+        circle_marker_fe4f45b6f09c2d046f4dc92e99bade7b.bindPopup(popup_3103c545caf5fc984d04b40e035f540d)
+        ;
+
+        
+    
+    
+            marker_cluster_c9587e1e1adbf9b90288a89a656416fd.addTo(map_54854dad90a1b8fbe18b821309fb5f67);
+        
+</script>
+</html>
